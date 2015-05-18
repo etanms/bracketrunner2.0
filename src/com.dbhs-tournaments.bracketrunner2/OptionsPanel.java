@@ -15,10 +15,6 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
 
-/*import org.json.simple.JSONArray;
-import org.json.simple.JSONObject;
-import org.json.simple.parser.JSONParser;*/
-
 import com.etan.dbhs.DBHSDatabaseIntermediary;
 import com.etan.widgets.UnderlinedLabel;
 
@@ -31,21 +27,12 @@ import com.etan.widgets.UnderlinedLabel;
 @SuppressWarnings("serial")
 class OptionsPanel extends JPanel implements ActionListener{
 	
-	/*private static final String JDBC_DRIVER = "com.mysql.jdbc.Driver";
-	private static final String DB_URL = "jdbc:mysql://localhost/dbhs_2";
-
-	private static final String USER = "root";
-	private static final String PASS = "";*
+    private boolean started;
+    private int[] prizes;
 	
-	private Connection conn;
-	private Statement stmt;*/
-	
-	private boolean started;
-	private int[] prizes;
-	
-	private JLabel locationLabel;
-	private String[] locationsList;
-	private JComboBox<String> locationComboBox;
+    private JLabel locationLabel;
+    private String[] locationsList;
+    private JComboBox<String> locationComboBox;
     private JLabel gameLabel;
     private String[] gamesList;
     private JComboBox<String> gameComboBox;
